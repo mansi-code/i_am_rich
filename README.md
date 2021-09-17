@@ -1,6 +1,6 @@
 # i_am_rich
 
-A new Flutter application which is based on art of living 
+A new Flutter application which is promtes  art of living . This app has container , column , text, image , appbar widgets . Along with this icon is also set . The image used is an asset image .  
 
 ## Getting Started
 
