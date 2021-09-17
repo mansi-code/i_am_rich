@@ -1,23 +1,41 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(
-    MaterialApp(
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
           title: Text("I AM RICH"),
-          backgroundColor: Colors.black,
+          backgroundColor: Colors.white54,
         ),
-        backgroundColor: Colors.blueGrey,
+        backgroundColor: Colors.black,
         body: Center(
-          child: Image(
-            image: NetworkImage(
-                'https://cdn.cultofmac.com/wp-content/uploads/2008/08/post-2486-image-47d51b6614a63bf14fb79e4151becdd9.jpg'),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Image(
+                image: AssetImage('images/diamond.jpg'),
+              ),
+              Text(
+                'Welcome to the art of living',
+                style: TextStyle(
+                  fontSize: 25.0,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.white,
+                  fontStyle: FontStyle.italic,
+                ),
+              )
+            ],
           ),
         ),
       ),
-    ),
-  ); //myapp was flutter team app instead blank material app will confirm to material design (a gogle made designs)
+    );
+  }
 }
 //home is where everything starts
 //added a text widget
